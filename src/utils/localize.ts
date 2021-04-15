@@ -1,7 +1,10 @@
 import Polyglot from 'node-polyglot'
-
 let polyglot = new Polyglot()
 
+/**
+ * TODO - Load lang once on app load
+ * Allow user to choose language
+*/
 const initBrowserLang = (): string | undefined => {
     if (typeof window === 'undefined' 
         || typeof window.navigator === 'undefined') {
@@ -29,6 +32,7 @@ const initBrowserLang = (): string | undefined => {
 
     return browserLang;
 }
+
 
 const fetchLocaleStringsForComponent = (locale: string): Promise<any> => {
     return new Promise((resolve, reject): void => {
