@@ -33,7 +33,6 @@ const initBrowserLang = (): string | undefined => {
     return browserLang;
 }
 
-
 const fetchLocaleStringsForComponent = (locale: string): Promise<any> => {
     return new Promise((resolve, reject): void => {
       fetch(`/lang/${locale}.json`, {
