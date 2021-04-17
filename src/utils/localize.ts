@@ -48,6 +48,7 @@ const fetchLocaleStringsForComponent = (locale: string): Promise<any> => {
     });
 }
 
+
 const locale = initBrowserLang()
 try {
     await fetchLocaleStringsForComponent(locale).then(r => polyglot.extend(r))
