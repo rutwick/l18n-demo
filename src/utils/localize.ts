@@ -54,4 +54,5 @@ try {
 } catch(e) {
     await fetchLocaleStringsForComponent("en").then(r =>  polyglot.extend(r))
 }
+
 export default polyglot;
