@@ -29,6 +29,7 @@ const initBrowserLang = (): string | undefined => {
     if (browserLang.indexOf('_') !== -1) {
         browserLang = browserLang.split('_')[0];
     }
+
     return browserLang;
 }
 
