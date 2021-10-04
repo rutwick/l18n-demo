@@ -5,7 +5,6 @@ import polyglot from '../../utils/localize';
   styleUrl: 'app-home.css',
   shadow: true,
 })
-
 export class AppHome {
   render() {
     return (
