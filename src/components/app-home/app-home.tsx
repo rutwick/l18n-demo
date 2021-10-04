@@ -1,6 +1,5 @@
 import { Component, h } from '@stencil/core';
 import polyglot from '../../utils/localize';
-
 @Component({
   tag: 'app-home',
   styleUrl: 'app-home.css',
